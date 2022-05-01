@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use('/assets', express.static (__dirname + '/public'));
 
 //index
-app.get('/index', (req, res) => {
+app.get('/', (req, res) => {
   res.render('index_view');
 });
 
